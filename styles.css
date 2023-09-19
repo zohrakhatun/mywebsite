@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1000px) and (min-width:770px) {
+
+    .contact>div{
+        min-width: 50%;
+    }
+      
+}
+@media screen and (max-width:770px) {
+    .contact>div{
+        min-width: 100%;
+    }
+}
+
+.contact>div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
